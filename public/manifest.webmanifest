@@ -1,0 +1,18 @@
+{
+  "id": "./",
+  "name": "باندلینگ ورژن ۶ | توسن تکنو",
+  "short_name": "باندلینگ v6",
+  "description": "سامانه طراحی مدل فروش محصولات کارتخوان توسن تکنو",
+  "lang": "fa",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#064b91",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

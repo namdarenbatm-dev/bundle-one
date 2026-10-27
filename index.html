@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<meta name="theme-color" content="#064b91"/>
+<meta name="description" content="سامانه طراحی مدل فروش محصولات کارتخوان توسن تکنو - باندلینگ ورژن ۶"/>
+<link rel="manifest" href="%BASE_URL%manifest.webmanifest"/>
+<link rel="icon" type="image/png" href="%BASE_URL%assets/icon-192.png"/>
+<link rel="apple-touch-icon" href="%BASE_URL%assets/apple-touch-icon.png"/>
+<title>باندلینگ ورژن ۶ | توسن تکنو</title>
+<style>
+body{margin:0;font-family:Tahoma,sans-serif;background:#fff}
+#boot-error{display:none;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:24px;color:#172b3a;line-height:2}
+#boot-error b{display:block;font-size:18px;margin-bottom:8px}
+#boot-error button{margin-top:14px;border:0;border-radius:10px;background:#064b91;color:#fff;padding:11px 22px;font:inherit;cursor:pointer}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<div id="boot-error"><div><b>بارگذاری برنامه انجام نشد.</b>فایل‌های برنامه پیدا یا اجرا نشد. اگر اینترنت دارید، صفحه را دوباره بارگذاری کنید؛<br/>اگر ادامه داشت، آدرس انتشار یا Build پروژه نیاز به بررسی دارد.<br/><button onclick="location.reload()">بارگذاری دوباره</button></div></div>
+<script>
+// اگر برنامه ظرف ۱۰ ثانیه اجرا نشد یا فایل اسکریپت/استایل خطا داد، به‌جای صفحه سفید پیام خطا نشان بده.
+(function(){
+  function fail(){ if(window.__appMounted) return; document.getElementById('boot-error').style.display='flex'; }
+  window.addEventListener('error',function(e){ var t=e.target; if(t&&(t.tagName==='SCRIPT'||t.tagName==='LINK')||!window.__appMounted) fail(); },true);
+  window.addEventListener('unhandledrejection',fail);
+  setTimeout(fail,10000);
+})();
+</script>
+<script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
